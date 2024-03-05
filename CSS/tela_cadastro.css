@@ -1,0 +1,173 @@
+
+body {
+    background: rgba(189, 50, 50, 0.85);
+    margin: 0%;
+}
+
+
+
+
+img{
+    height: 100vh; /* Define a altura da imagem como 100% da altura da viewport */
+    width: auto; /* Permite que a largura se ajuste automaticamente */
+    display: block;
+     /* Centraliza a imagem horizontalmente */
+    object-fit: cover;
+}
+
+
+
+
+form{
+    display:inline-block;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(0%, -50%);
+    text-align: center;
+}
+
+
+
+
+h1{
+    color: #FDF8F8;
+
+
+
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Rammetto One;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+
+
+
+    margin-bottom: 12%;
+}
+
+
+
+
+div input{
+    display: block;
+    margin: 9px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.47);
+    padding: 8px 250px 8px 10px;
+
+
+
+
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+
+
+
+
+    mix-blend-mode: overlay;
+
+
+
+
+}
+
+#button {
+    /* Define o padding para o botão */
+    padding: 19px;
+}
+
+#submitBtn {
+    /* Define a largura do botão */
+    width:420px;
+    /* Define a cor de fundo do botão */
+    background-color: rgb(188, 20, 20);
+    /* Define a cor do texto dentro do botão */
+    color: rgba(255, 255, 255, 0.47);
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    padding: 10px; /* Pode ajustar conforme necessário */
+    /* Define a borda do botão */
+    border-radius: 20px;
+    margin: 5px; /* Pode ajustar conforme necessário */
+}
+
+
+
+
+a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.47);
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    padding: 20px;
+}
+
+#a1{
+    margin-left: 280px;
+}
+
+
+
+div ::placeholder{
+    color: rgb(124, 8, 8);
+}
+@media screen and (max-width: 768px) {
+    img {
+        height: 100vh; /* Define a altura da imagem como 100% da altura da viewport */
+    width: auto; /* Permite que a largura se ajuste automaticamente */
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    object-fit: cover;
+    }
+
+
+    form {
+        /* Ajusta o formulário para telas menores */
+        width: 80%; /* Ajuste conforme necessário */
+        margin: 0 auto; /* Centraliza o formulário */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+    h1 {
+        font-size: 28px; /* Reduz o tamanho da fonte do título */
+        margin-bottom: 8%; /* Ajuste conforme necessário */
+    }
+
+
+    div input {
+        width: 100%; /* Preenche toda a largura do contêiner */
+        padding: 8px 10px; /* Ajusta o preenchimento interno */
+        margin: 8px 0; /* Ajuste conforme necessário */
+    }
+
+
+    #cadastrar {
+        width: 100%; /* Preenche toda a largura do contêiner */
+        margin-top: 20px; /* Ajuste conforme necessário */
+    }
+
+
+    a {
+        margin-left: 0; /* Remove a margem à esquerda */
+        text-align: center; /* Centraliza o texto */
+    }
+}

@@ -1,0 +1,342 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#nos{
+    text-decoration: none;
+    color: #FFF;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  
+#nos:hover{
+    color: #7d839e;
+    transition: 0.3s;
+    transform: scale(6);
+  }
+
+header {
+    display: flex;
+    background-color: #BD3232;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5%; /* Percentual para se adaptar a diferentes larguras de tela */
+    padding-right: 5%; /* Percentual para se adaptar a diferentes larguras de tela */
+    min-width: 320px; /* Largura mínima da barra de cabeçalho */
+}
+
+
+nav {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem para nova linha */
+}
+
+
+.a-header, .a2-header {
+    display: inline-flex;
+    align-items: center;
+    height: 60px;
+    line-height: 60px;
+    font-weight: bold;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 16px; /* Redução do tamanho da fonte para telas menores */
+    margin-right: 20px; /* Redução da margem entre os itens */
+}
+
+
+.a-header:hover {
+    color: #918b8b;
+    transition: 0.6s;
+}
+
+
+
+.h1-header {
+    color: #FFF;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+    font-family: 'Rammetto One';
+    text-decoration: none;
+}
+
+
+.div1 {
+    position: relative;
+    cursor: pointer;
+    z-index: 2; /* Define um z-index maior que o slideshow para sobrepor */
+}
+
+
+.div2 {
+    display: none;
+    position: absolute;
+    background-color: #918b8b;
+    min-width: 160px;
+}
+
+
+.div1:hover .div2 {
+    display: block;
+}
+
+
+.div2 .a2-header {
+    display: block; /* Ajuste para tornar os links do menu suspensos empilhados */
+    color: black;
+    text-decoration: none;
+    padding-left: 15px;
+    border-left: solid 3px #000;
+    border-bottom: solid 3px #000;
+}
+
+
+.div2 .a2-header:hover {
+    background-color: #e74d4d;
+}
+
+
+/* Media query para ajustar o estilo em telas menores */
+@media screen and (max-width: 768px) {
+    .a-header, .a2-header {
+        font-size: 14px; /* Redução adicional do tamanho da fonte */
+        margin-right: 15px; /* Ajuste da margem entre os itens */
+    }
+
+
+    .h1-header {
+        font-size: 24px; /* Redução adicional do tamanho da fonte */
+    }
+
+
+    header {
+        padding-left: 10px; /* Ajuste do espaçamento interno */
+        padding-right: 10px; /* Ajuste do espaçamento interno */
+    }
+}
+
+
+
+
+/*header 100%*/
+
+
+
+
+/*main*/
+
+
+.doador {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.titulos2 {
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+.titulos2 h1{
+    font-family: Cookie;
+    font-size: 60px;
+    margin: 0px;
+    color: #BD3232;
+}
+
+
+
+
+.titulos2 h2{
+    font-family: Inter;
+    font-size: 30px;
+    margin: 0px;
+}
+
+
+
+
+/* Adaptações gerais para telas menores */
+@media screen and (max-width: 768px) {
+    .titulos2 h1 {
+        font-size: 40px; /* Reduz o tamanho do título h1 */
+    }
+
+
+    .titulos2 h2 {
+        font-size: 20px; /* Reduz o tamanho do título h2 */
+    }
+}
+/*ok*/
+
+
+.section1{
+
+
+   
+    text-align: center;
+
+
+    flex-direction: column;
+    background-color: #BD3232;
+    margin: 10px auto;
+    width: 80%;
+    height: 440px;
+    border-radius: 25px;
+    border: solid 1px #000;
+}
+
+
+
+
+
+
+.nomeu{
+    padding: 15px 0px 0px ;
+   
+}
+
+
+
+
+.nomeu input[type="text"] {
+    padding: 10px 30px;
+    width: 80%; /* Defina a largura desejada */
+    font-size: 16px;
+    border-radius: 30px;
+    margin: 0px;
+   
+}
+
+
+
+
+.emailu{
+    padding: 15px 0px 0px ;
+}
+
+
+
+
+.emailu input[type="text"] {
+    padding: 10px 30px;
+    width: 80%; /* Defina a largura desejada */
+    font-size: 16px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+
+
+.lugar p{
+    margin: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.input-group{
+    text-align: left;
+    display: inline-block;
+    width: 80%;
+    font-size: 16px; /* Ajuste conforme necessário */
+    color: #000000; /* Ajuste conforme necessário */
+    background-color: #ffffff;
+    border-radius: 30px;
+    padding:  10px 30px;
+    margin-bottom: 16px;
+    border: solid 1px #000;
+    align-items: center;
+}  
+.input-group p,label {
+    display: inline-block; margin-right: 10px;
+}
+
+
+.conf input[type="text"] {
+    padding: 10px 30px;
+    width: 80%; /* Defina a largura desejada */
+    font-size: 16px;
+    border-radius: 30px;
+}
+
+
+
+
+
+
+
+
+/*ok*/
+#botao {
+    text-align: center; /* Centraliza horizontalmente */
+    margin-bottom: 60px; /* Adiciona um espaço abaixo do botão */
+}
+
+
+#botao input[type="button"]:active {
+    background-color: rgb(195, 192, 255); /* Altera a cor do botão ao ser clicado para rosa */
+}
+
+
+#botao input[type="button"] {
+    /* Estilos adicionais, se necessário */
+    padding: 20px;
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Inter;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 700;
+    border-radius: 15px;
+    background-color: #BD3232;
+}
+
+
+/* Footer */
+footer {
+    position: fixed; /* Fixa o rodapé */
+    bottom: 0; /* Alinha na parte inferior */
+    left: 0; /* Alinha à esquerda */
+    width: 100%; /* Largura total */
+    background-color: #d54545;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px; /* Tamanho da fonte base */
+    color: #524e4e;
+   
+}
+
+
+footer p{
+    margin:0px;
+}
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    footer {
+        font-size: 12px; /* Redução do tamanho da fonte para telas menores */
+    }
+}
+

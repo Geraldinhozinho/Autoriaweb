@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar</title>
+    <link rel="stylesheet" href="../CSS/tela_entrar.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Fira+Code:wght@300;500&family=Inter&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <img class="fundo" src="../IMG/img_entrar_e_cadastro.png" alt="">
+    <form id="loginForm">
+        <div>
+            <h1>HEMOC♡NNECT</h1>
+            <label for="nome">
+                <input type="text" id="nome" name="nome" placeholder="nome" required>
+            </label>
+    
+            <label for="senha">
+                <input type="password" id="senha" name="senha" placeholder="senha" required>
+            </label>
+        </div>
+    
+        <div id="button">
+            <button type="submit" id="submitBtn">Entrar</button>
+        </div>
+    </form>
+    
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+            validateLoginForm();
+        });
+    
+        function validateLoginForm() {
+            var nome = document.getElementById('nome').value;
+            var senha = document.getElementById('senha').value;
+    
+            if (nome === '' || senha === '') {
+                alert('Por favor, preencha todos os campos.');
+            } else {
+                window.location.href = '../HTML/tela_menu.html'; // Redireciona se os campos estiverem corretos
+            }
+        }
+    </script>
+    
+    
+
+</body>
+</html>

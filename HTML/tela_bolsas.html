@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../CSS/tela_bolsas.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cookie&family=IBM+Plex+Serif:wght@600&display=swap" rel="stylesheet">
+  <title> HEMOCONNECT</title>
+</head>
+<body>
+    <header>
+        <h1 class="h1-header" > <a id="nos" href="../HTML/tela_nossa.html">HEM♡CONNECT</a></h1>
+        <nav> <!-- Navegation -->
+           
+            <a class="a-header" href="../HTML/tela_menu.html" lang="en" >Menu</a>  <!-- Anchor-->
+            <a class="a-header" href="../HTML/tela_doador.html" >Seja um doador</a>
+            <a class="a-header"  href="../HTML/tela_contatos.html" >Contatos</a>
+            <div class="div1">
+                <img src="../IMG/img_perfil.png" width="60px" height="60px" alt="">
+                <div class="div2">
+                  <a class="a2-header" href="../HTML/tela_perfil.html">Perfil</a>
+                  <a class="a2-header" href="../HTML/tela_doacoes.html">Doações</a>
+                  <a class="a2-header" href="../HTML/tela_cadastrar.html">Sair</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+<div class="chart-container" id="chartContainer">
+  <!-- Barras serão inseridas dinamicamente pelo JavaScript -->
+</div>
+<script src="script.js"></script>
+   
+    <div class="circle" id="circle1"></div>
+    <div class="circle" id="circle2"></div>
+
+
+    <div class="nome1">
+      <h1>IDEAL</h1>
+ 
+    </div>
+
+
+    <div class="nome2">
+      <h1>DISPONIVEL</h1>
+    </div>
+
+
+    <div class="numero1">
+      <h1>400</h1>
+    </div>
+
+
+    <div class="numero2">
+      <h1>300</h1>
+    </div>
+
+
+    <div class="numero3">
+      <h1>200</h1>
+    </div>
+
+
+    <div class="numero4">
+      <h1>100</h1>
+    </div>
+
+
+    <div class="numero5">
+      <h1>0</h1>
+    </div>
+
+
+    <div class="blood-types">
+      <ol>
+          <li class="type1">A+</li>
+          <li class="type2">O+</li>
+          <li class="type3">B+</li>
+          <li class="type4">AB+</li>
+          <li class="type5">A-</li>
+          <li class="type6">B-</li>
+          <li class="type7">AB-</li>
+          <li class="type8">O-</li>
+      </ol>
+  </div>
+
+
+    <div class="subtitulo">
+      <h1>Bolsas Disponiveis</h1>
+      <br>
+
+
+    </div>
+   
+
+    <footer>
+        <p>2023 - Todos os direitos reservados. Hospital Regional de Pau dos Ferros - HCCA</p>
+        <p>Politica de Privacidade</p>
+    </footer>
+
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const chartContainer = document.getElementById("chartContainer");
+      
+      
+        // Dados de exemplo (altura das barras)
+        const data = [700, 350, 450, 470, 250, 160, 200, 120, 120, 120, 100, 85,100 , 70, 60, 40];
+      
+      
+        // Adiciona as barras ao contêiner
+        for (let i = 0; i < data.length; i++) {
+            const bar = document.createElement("div");
+            bar.className = i % 2 === 0 ? "bar green" : "bar orange";
+            bar.style.height = data[i] + "px";
+            chartContainer.appendChild(bar);
+        }
+      });
+      
+</script>
+</body>
+</html>

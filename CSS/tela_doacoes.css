@@ -1,0 +1,621 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+  }
+  
+  
+  
+  
+  header{
+    display: flex;
+    background-color: #BD3232;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+   
+   
+   
+  }
+  
+  
+  
+  
+  
+  
+  nav{
+    display: inline-flex;
+   
+  }
+  
+  
+  
+  
+  a{
+    display: inline-flex;
+    align-items: center;
+    height: 60px;
+    line-height: 90px;
+    font-weight:bold;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 30px;
+  }
+  
+  
+  h1{
+   
+    color: #FFF;
+    font-size: 40px;
+    font-weight:bold;
+    margin: 0px;
+    font-family: 'Rammetto One';
+   
+  }
+  
+  
+  
+  
+  PARTE DA BOLINHA LÁ
+  .div1 {
+    position: relative;
+    cursor: pointer;
+   
+   
+  }
+  
+  
+  .div2 {
+    display: none;
+    position: absolute;
+    background-color: #918b8b;
+    min-width: 160px;
+   
+   
+   
+  }
+  
+  
+  .div1:hover .div2 {
+    display: block;
+   
+   
+  }
+  
+  
+  .div2 a {
+    display: flex;
+    color: black;
+    padding-left: 15px;
+  
+  
+  
+  
+    text-decoration: none;
+   
+    border-left: solid 3px #000;
+    border-bottom: solid 3px #000;
+   
+   
+   
+  }
+  
+  
+  .div2 a:hover {
+    background-color: #e74d4d;
+  }
+  
+  
+  Nao presta essa
+  
+  
+  
+  
+  
+  
+  
+  
+  .div1 {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 20px
+   
+  }
+  
+  
+  .div2 {
+    display: none;
+    position: absolute;
+    background-color: #918b8b;
+    min-width: 160px;
+   
+   
+  }
+  
+  
+  .div1:hover .div2 {
+    display: block;
+   
+  }
+  
+  
+  .div2 a {
+    color: black;
+    padding: 0px;
+    text-decoration: none;
+    display: block;
+   
+  }
+  
+  
+  .div2 a:hover {
+    background-color: #e74d4d;
+  }
+  
+  
+  body{
+    background-color: antiquewhite;
+    margin: 0;
+      padding: 0;
+      height: 100vh; /* Define a altura do corpo da página */
+      flex-direction: column;
+  }
+  
+  
+  .subtitulo h1{
+    text-align: center;
+    color: #BD3232;
+    font-family: 'Cookie', cursive;
+  }
+  
+  
+  .quadrado {
+    align-items: center;
+    width: 30%; /* Largura do quadrado */
+    height: 15px; /* Altura do quadrado */
+    background-color: antiquewhite; /* Cor de fundo do quadrado */
+    margin-left: 34%;
+    border-radius: 20%;
+    background-size: 100px 50px; /* Isso fará com que o plano de fundo cubra toda a área do elemento form */
+          background-repeat: no-repeat; /* Evita a repetição do plano de fundo */
+          background-position: center; /* Centraliza o plano de fundo */
+          padding: 20px; /* Adicione preenchimento interno para evitar que o conteúdo se sobreponha ao plano de fundo */
+          font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
+          border-radius: 10%;
+          background-size: cover;
+          border: 2px solid #ccc; /* Adicione uma borda ao formulário para que você possa ver o arredondamento */
+          border-radius: 20px 20px 20px 20px; /* Arredonda apenas a borda direita */
+          padding: 20px;
+          margin-bottom: 30px;
+   
+  }
+  
+  
+  
+  
+  .quadrado a {
+    color: #000;
+    position: relative;
+    top: -20px; /* Ajuste o valor negativo para subir o texto */
+   
+  }
+  
+  
+  .quadrado a mes{
+    line-height: 80%;
+  }
+  
+  
+  .data{
+    display: inline-flex;
+  }
+  
+  
+  
+  
+  .data a {
+    color: #000;
+    top: 20%;
+    margin-right: 60%;
+    display: inline-flex;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    height: 60px;
+    line-height: 90px;
+    font-weight:bold;
+  
+  
+  }
+  
+  
+  .quadrado1{
+    align-items: center;
+    width: 30%; /* Largura do quadrado */
+    height: 15px; /* Altura do quadrado */
+    background-color: antiquewhite; /* Cor de fundo do quadrado */
+    margin-left: 34%;
+    border-radius: 20%;
+    background-size: 100px 50px; /* Isso fará com que o plano de fundo cubra toda a área do elemento form */
+          background-repeat: no-repeat; /* Evita a repetição do plano de fundo */
+          background-position: center; /* Centraliza o plano de fundo */
+          padding: 20px; /* Adicione preenchimento interno para evitar que o conteúdo se sobreponha ao plano de fundo */
+          font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
+          border-radius: 10%;
+          background-size: cover;
+          border: 2px solid #ccc; /* Adicione uma borda ao formulário para que você possa ver o arredondamento */
+          border-radius: 20px 20px 20px 20px; /* Arredonda apenas a borda direita */
+          padding: 20px;
+          margin-bottom: 30px;
+          align-items: center;
+          margin-bottom: 30px;
+  }
+  
+  
+  .quadrado1 a{
+    color: #000;
+          position: relative;
+          top: -20px; /* Ajuste o valor negativo para subir o texto */
+          align-items: center;
+  
+  
+  }
+  
+  
+  form {
+    background-size: 100px 50px; /* Isso fará com que o plano de fundo cubra toda a área do elemento form */
+          background-repeat: no-repeat; /* Evita a repetição do plano de fundo */
+          background-position: center; /* Centraliza o plano de fundo */
+          padding: 20px; /* Adicione preenchimento interno para evitar que o conteúdo se sobreponha ao plano de fundo */
+          font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
+          border-radius: 10%;
+          background-size: cover;
+          background-color: #BD3232;
+          border: 2px solid #ccc; /* Adicione uma borda ao formulário para que você possa ver o arredondamento */
+          border-radius: 20px 20px 20px 20px; /* Arredonda apenas a borda direita */
+          padding: 20px;
+          height: 700px;
+         
+  }
+  
+  
+  form{
+    background-position: center center;
+  
+  
+  }
+  
+  
+  div{
+    background-position: top right;
+  }
+  
+  
+  form{
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    margin-left: 10%;
+  }
+  
+  
+  form fieldset {
+    width: 700px; /* Define a largura desejada para o fieldset */
+    padding: 20px; /* Adiciona preenchimento interno para o fieldset */
+    border: 1px solid #ccc; /* Adiciona uma borda para melhor visualização */
+    margin: 0; /* Define margem zero para evitar espaços extras */
+    height: -700px;
+    align-items: center;
+    margin-left: 70%;
+  }
+  
+  
+  form fieldset legend {
+    font-size: 16px; /* Tamanho da fonte do título do fieldset */
+    margin-bottom: 10px; /* Espaçamento entre o título e os elementos */
+  }
+  
+  
+  form fieldset label {
+    display: block; /* Faz com que os rótulos dos campos fiquem em blocos para separá-los */
+    margin-bottom: 5px; /* Espaçamento entre os rótulos e os campos de entrada */
+  }
+  
+  
+  form fieldset input {
+    width: calc(100% - 12px); /* Define a largura dos inputs levando em conta o preenchimento (ajuste conforme necessário) */
+    /* Outros estilos para os campos de entrada, se desejado */
+  }
+  
+  
+  
+  
+  
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  
+  
+  
+  
+  
+  .quadrado2{
+    align-items: center;
+    width: 30%; /* Largura do quadrado */
+    height: 15px; /* Altura do quadrado */
+    background-color: antiquewhite; /* Cor de fundo do quadrado */
+    margin-left: 34%;
+    border-radius: 20%;
+    background-size: 100px 50px; /* Isso fará com que o plano de fundo cubra toda a área do elemento form */
+          background-repeat: no-repeat; /* Evita a repetição do plano de fundo */
+          background-position: center; /* Centraliza o plano de fundo */
+          padding: 20px; /* Adicione preenchimento interno para evitar que o conteúdo se sobreponha ao plano de fundo */
+          font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
+          border-radius: 10%;
+          background-size: cover;
+          border: 2px solid #ccc; /* Adicione uma borda ao formulário para que você possa ver o arredondamento */
+          border-radius: 20px 20px 20px 20px; /* Arredonda apenas a borda direita */
+          padding: 20px;
+          margin-bottom: 30px;
+          align-items: center;
+       
+  }
+  
+  
+  .quadrado2 a{
+          color: #000;
+          position: relative;
+          top: -20px; /* Ajuste o valor negativo para subir o texto */
+          align-items: center;
+  }
+  
+  
+  .quadrado3{
+    align-items: center;
+    width: 30%; /* Largura do quadrado */
+    height: 15px; /* Altura do quadrado */
+    background-color: antiquewhite; /* Cor de fundo do quadrado */
+    margin-left: 34%;
+    border-radius: 20%;
+    background-size: 100px 50px; /* Isso fará com que o plano de fundo cubra toda a área do elemento form */
+          background-repeat: no-repeat; /* Evita a repetição do plano de fundo */
+          background-position: center; /* Centraliza o plano de fundo */
+          padding: 20px; /* Adicione preenchimento interno para evitar que o conteúdo se sobreponha ao plano de fundo */
+          font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
+          border-radius: 10%;
+          background-size: cover;
+          border: 2px solid #ccc; /* Adicione uma borda ao formulário para que você possa ver o arredondamento */
+          border-radius: 20px 20px 20px 20px; /* Arredonda apenas a borda direita */
+          padding: 20px;
+          margin-bottom: 30px;
+          color: #000;
+          align-items: center;
+  
+  
+  
+  
+   
+   
+  
+  
+  }
+  
+  
+  .quadrado3 a{
+    color: #000;
+    position: relative;
+    top: -20px; /* Ajuste o valor negativo para subir o texto */
+    align-items: center;
+  
+  
+  }
+  
+  
+  .quadrado4{
+    align-items: center;
+    width: 30%; /* Largura do quadrado */
+    height: 15px; /* Altura do quadrado */
+    background-color: antiquewhite; /* Cor de fundo do quadrado */
+    margin-left: 34%;
+    border-radius: 20%;
+    background-size: 100px 50px; /* Isso fará com que o plano de fundo cubra toda a área do elemento form */
+          background-repeat: no-repeat; /* Evita a repetição do plano de fundo */
+          background-position: center; /* Centraliza o plano de fundo */
+          padding: 20px; /* Adicione preenchimento interno para evitar que o conteúdo se sobreponha ao plano de fundo */
+          font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
+          border-radius: 10%;
+          background-size: cover;
+          border: 2px solid #ccc; /* Adicione uma borda ao formulário para que você possa ver o arredondamento */
+          border-radius: 20px 20px 20px 20px; /* Arredonda apenas a borda direita */
+          padding: 20px;
+          margin-bottom: 30px;
+          color: #000;
+          align-items: center;
+  }
+  
+  
+  .quadrado4 a {
+    color: #000;
+    position: relative;
+    top: -20px; /* Ajuste o valor negativo para subir o texto */
+    align-items: center;
+  }
+  
+  
+  .ano{
+    margin-left: 49%;
+    font-size: 25px;
+    font-weight: bold;
+    align-items: center;
+   
+  
+  
+  }
+  
+  
+  .ano2{
+    margin-left: 49%;
+    font-size: 25px;
+    font-weight: bold;
+    align-items: center;
+  }
+  
+  
+  .quadrado5 {
+    align-items: center;
+    width: 30%; /* Largura do quadrado */
+    height: 15px; /* Altura do quadrado */
+    background-color: antiquewhite; /* Cor de fundo do quadrado */
+    margin-left: 34%;
+    border-radius: 20%;
+    background-size: 100px 50px; /* Isso fará com que o plano de fundo cubra toda a área do elemento form */
+          background-repeat: no-repeat; /* Evita a repetição do plano de fundo */
+          background-position: center; /* Centraliza o plano de fundo */
+          padding: 20px; /* Adicione preenchimento interno para evitar que o conteúdo se sobreponha ao plano de fundo */
+          font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
+          border-radius: 10%;
+          background-size: cover;
+          border: 2px solid #ccc; /* Adicione uma borda ao formulário para que você possa ver o arredondamento */
+          border-radius: 20px 20px 20px 20px; /* Arredonda apenas a borda direita */
+          padding: 20px;
+          margin-bottom: 30px;
+          color: #000;
+          align-items: center;
+  }
+  
+  
+  .quadrado5 a{
+    color: #000;
+    position: relative;
+    top: -20px; /* Ajuste o valor negativo para subir o texto */
+    align-items: center;
+   
+  }
+  
+  
+  .quadrado6 {
+    align-items: center;
+    width: 30%; /* Largura do quadrado */
+    height: 15px; /* Altura do quadrado */
+    background-color: antiquewhite; /* Cor de fundo do quadrado */
+    margin-left: 34%;
+    border-radius: 20%;
+    background-size: 100px 50px; /* Isso fará com que o plano de fundo cubra toda a área do elemento form */
+          background-repeat: no-repeat; /* Evita a repetição do plano de fundo */
+          background-position: center; /* Centraliza o plano de fundo */
+          padding: 20px; /* Adicione preenchimento interno para evitar que o conteúdo se sobreponha ao plano de fundo */
+          font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
+          border-radius: 10%;
+          background-size: cover;
+          border: 2px solid #ccc; /* Adicione uma borda ao formulário para que você possa ver o arredondamento */
+          border-radius: 20px 20px 20px 20px; /* Arredonda apenas a borda direita */
+          padding: 20px;
+          margin-bottom: 30px;
+          color: #000;
+          align-items: center;
+  
+  
+  }
+  
+  
+  .quadrado6 a {
+    color: #000;
+    position: relative;
+    top: -20px; /* Ajuste o valor negativo para subir o texto */
+    align-items: center;
+  
+  
+  }
+  
+  
+  .ano3 {
+    margin-left: 49%;
+    font-size: 25px;
+    font-weight: bold;
+    align-items: center;
+  }
+ 
+  
+
+  
+  form {
+    width: 800px; /* Definir a largura do formulário */
+    margin: 0; /* Remover margens para um espaço mais compacto */
+    padding: 15px; /* Adicionar preenchimento interno */
+    border: 1px solid #ccc; /* Adicionar uma borda ao redor do formulário */
+    border-radius: 5px; /* Adicionar cantos arredondados */
+    background-size: 2%;
+  }
+  
+  
+  label, input, textarea {
+    display: block; /* Colocar cada rótulo e campo em uma nova linha */
+    margin-bottom: 10px; /* Adicionar margem inferior para separação */
+    width: 100%; /* Usar toda a largura disponível */
+  }
+  
+  
+  input, textarea {
+    padding: 8px; /* Adicionar preenchimento interno aos campos */
+    border: 1px solid #ccc; /* Adicionar uma borda aos campos */
+    border-radius: 3px; /* Adicionar cantos arredondados */
+  }
+  
+  
+  input[type="submit"] {
+    width: auto; /* Redefinir a largura automática para o botão de envio */
+  }
+  
+  
+  .background {
+    align-items: center;
+  }
+  
+  
+  fieldset {
+    background-color: #BD3232;
+    width: 50%;
+    align-items: center;
+    margin-left: 24%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+  
+  
+  h2{
+    font-size: 20px;
+    margin-top: -17px;
+    text-align: center;
+    color: #FFF;
+  }
+  footer {
+    position: fixed; /* Fixa o rodapé */
+    bottom: 0; /* Alinha na parte inferior */
+    left: 0; /* Alinha à esquerda */
+    width: 100%; /* Largura total */
+    background-color: #d54545;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px; /* Tamanho da fonte base */
+    color: #524e4e;
+   
+}
+
+
+footer p{
+    margin:0px;
+}
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    footer {
+        font-size: 12px; /* Redução do tamanho da fonte para telas menores */
+    }
+}

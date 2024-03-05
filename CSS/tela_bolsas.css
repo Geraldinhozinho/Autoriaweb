@@ -1,0 +1,445 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#nos{
+  text-decoration: none;
+  color: #FFF;
+  transition: color 0.3s, transform 0.3s;
+}
+
+
+#nos:hover{
+  color: #7d839e;
+  transition: 0.3s;
+  transform: scale(6);
+}
+header {
+    display: flex;
+    background-color: #BD3232;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5%; /* Percentual para se adaptar a diferentes larguras de tela */
+    padding-right: 5%; /* Percentual para se adaptar a diferentes larguras de tela */
+    min-width: 320px; /* Largura mínima da barra de cabeçalho */
+}
+
+
+nav {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem para nova linha */
+}
+
+
+.a-header, .a2-header {
+    display: inline-flex;
+    align-items: center;
+    height: 60px;
+    line-height: 60px;
+    font-weight: bold;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 16px; /* Redução do tamanho da fonte para telas menores */
+    margin-right: 20px; /* Redução da margem entre os itens */
+}
+
+
+.a-header:hover {
+    color: #918b8b;
+    transition: 0.6s;
+}
+
+
+.h1-header {
+    color: #FFF;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+    font-family: 'Rammetto One';
+}
+
+
+.div1 {
+    position: relative;
+    cursor: pointer;
+    z-index: 2; /* Define um z-index maior que o slideshow para sobrepor */
+}
+
+
+.div2 {
+    display: none;
+    position: absolute;
+    background-color: #918b8b;
+    min-width: 160px;
+}
+
+
+.div1:hover .div2 {
+    display: block;
+}
+
+
+.div2 .a2-header {
+    display: block; /* Ajuste para tornar os links do menu suspensos empilhados */
+    color: black;
+    text-decoration: none;
+    padding-left: 15px;
+    border-left: solid 3px #000;
+    border-bottom: solid 3px #000;
+}
+
+
+.div2 .a2-header:hover {
+    background-color: #e74d4d;
+}
+
+
+/* Media query para ajustar o estilo em telas menores */
+@media screen and (max-width: 768px) {
+    .a-header, .a2-header {
+        font-size: 14px; /* Redução adicional do tamanho da fonte */
+        margin-right: 15px; /* Ajuste da margem entre os itens */
+    }
+
+
+    .h1-header {
+        font-size: 24px; /* Redução adicional do tamanho da fonte */
+    }
+
+
+    header {
+        padding-left: 10px; /* Ajuste do espaçamento interno */
+        padding-right: 10px; /* Ajuste do espaçamento interno */
+    }
+}
+  
+  
+  body {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+   
+  }
+  
+  
+  .bar {
+    width: 100%;
+    transition: height 0.5s ease; /* Adiciona uma transição suave à altura */
+  }
+  
+  
+  
+  
+  #circle1 {
+    width: 60px; /* Ajuste o tamanho conforme necessário */
+    height: 60px; /* Ajuste o tamanho conforme necessário */
+    background-color: #00BF63;
+    border-radius: 50%; /* Faz com que a div tenha uma borda circular */
+    margin-left: 80%;
+    margin-top: -40%;
+  }
+  
+  
+  #circle2 {
+    background-color: #FF914D;
+    width: 60px; /* Ajuste o tamanho conforme necessário */
+    height: 60px; /* Ajuste o tamanho conforme necessário */
+    border-radius: 50%; /* Faz com que a div tenha uma borda circular */
+    margin-left: 80%;
+    margin-top: 2%;
+  
+  
+  }
+  
+  
+  .circle{
+    margin-bottom: 30px;
+  }
+  
+  
+  .subtitulo h1{
+    text-align: center;
+    color: #BD3232;
+    font-family: 'Cookie', cursive;
+    margin-top: -50%;
+  }
+  
+  
+  
+  
+  .nome1 h1{
+    width: 60px; /* Ajuste o tamanho conforme necessário */
+    height: 60px; /* Ajuste o tamanho conforme necessário */
+    color:#00BF63;
+    margin-left: 85%;
+    margin-top: -11%;
+    font-size: 200%;
+   
+  }
+  
+  
+  .nome2 h1 {
+    color:#FF914D;
+    width: 60px; /* Ajuste o tamanho conforme necessário */
+    height: 60px; /* Ajuste o tamanho conforme necessário */
+    margin-left: 85%;
+    margin-top: 2%;
+    font-size: 200%;
+  
+  
+  }
+  
+  
+  .numero1 h1{
+    color: black;
+    font-size: 200%;
+    margin-left: 20%;
+    margin-top: -19%;
+  }
+  
+  
+  .numero2 h1{
+    color: black;
+    font-size: 200%;
+    margin-left: 20%;
+    margin-top: 10%;
+  }
+  
+  
+  .numero3 h1{
+    color: black;
+    font-size: 200%;
+    margin-left: 20%;
+    margin-top: 10%;
+  }
+  
+  
+  .numero4 h1{
+    color: black;
+    font-size: 200%;
+    margin-left: 20%;
+    margin-top: 10%;
+  }
+  
+  
+  .numero5 h1{
+    color: black;
+    font-size: 200%;
+    margin-left: 22%;
+    margin-top: 6%;
+  }
+  
+  
+  
+  
+  .chart-container {
+    width: 50%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    border: 1px solid #ccc;
+    margin-left: 24%;
+    margin-top: 30%;
+   
+  }
+  
+  
+  .bar {
+    width: calc(100% / 16);
+    margin: 0;
+    transition: height 0.5s;
+    height: 900px;
+  }
+  
+  
+  .bar.green {
+    background-color: #00BF63; /* Cor verde */
+  }
+  
+  
+  .bar.orange {
+    background-color: #FF914D; /* Cor laranja */
+  }
+  
+  
+  .tipo1 h1{
+    color: black;
+    font-size: 200%;
+    margin-left: 26%;
+  }
+  
+  
+  .tipo2 h1{
+    color: black;
+    font-size: 200%;
+    margin-left: 32%;
+    margin-top: -2%;
+  }
+  
+  
+  .tipo3 h1 {
+    color: black;
+    font-size: 200%;
+    margin-left: 39%;
+    margin-top: -2%;
+  }
+  
+  
+  .tipo4 h1{
+    color: black;
+    font-size: 200%;
+    margin-left: 44%;
+    margin-top: -1%;
+  }
+  
+  
+  .tipo5 h1{
+    color: black;
+    font-size: 200%;
+    margin-left: 51%;
+    margin-top: -5%;
+  }
+  
+  
+  .tipo6 h1{
+    color: black;
+    font-size: 200%;
+    margin-left: 58%;
+    margin-top: -2%;
+  }
+  
+  
+  .tipo7 h1{
+    color: black;
+    font-size: 200%;
+    margin-left: 63%;
+    margin-top: -3%;
+  }
+  
+  
+  .tipo8 h1{
+    color: black;
+    font-size: 200%;
+    margin-left: 70%;
+    margin-top: -2%;
+  }
+  
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  
+  
+  .bar {
+    flex: 1;
+    margin-right: 5px;
+    transition: height 0.5s;
+  }
+  
+  
+  .bar:last-child {
+    margin-right: 0;
+  }
+  
+  
+  
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  .blood-types {
+    margin: 20px;
+    font-size: 100%;
+    margin-left: 30%;
+  }
+  
+  
+  .type1{
+    margin-left: -9%;
+  }
+  
+  
+  .type2{
+    margin-left: 5%;
+  }
+  
+  
+  .type3{
+    margin-left: 5%;
+  }
+  
+  
+  .type4{
+    margin-left: 4%;
+  }
+  
+  
+  .type5{
+    margin-left: 5%;
+  }
+  
+  
+  .type6{
+    margin-left: 5%;
+  }
+  
+  
+  .type7{
+    margin-left: 5%;
+  }
+  
+  
+  .type8{
+    margin-left: 5%;
+  }
+  .blood-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Permite que a lista quebre para a próxima linha se não houver espaço suficiente */
+  }
+  
+  
+  li {
+    margin-right: 20px; /* Adiciona espaço entre os itens */
+    margin-bottom: 8px;
+    display: inline-block; /* Exibe os itens como blocos inline */
+  }
+  
+  
+footer {
+    position: fixed; /* Fixa o rodapé */
+    bottom: 0; /* Alinha na parte inferior */
+    left: 0; /* Alinha à esquerda */
+    width: 100%; /* Largura total */
+    background-color: #d54545;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px; /* Tamanho da fonte base */
+    color: #524e4e;
+   
+}
+
+
+footer p{
+    margin:0px;
+}
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    footer {
+        font-size: 12px; /* Redução do tamanho da fonte para telas menores */
+    }
+}
+  
+  
+  
+ 

@@ -1,0 +1,271 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#nos{
+  text-decoration: none;
+  color: #FFF;
+  transition: color 0.3s, transform 0.3s;
+}
+
+
+#nos:hover{
+  color: #7d839e;
+  transition: 0.3s;
+  transform: scale(6);
+}
+header {
+    display: flex;
+    background-color: #BD3232;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5%; /* Percentual para se adaptar a diferentes larguras de tela */
+    padding-right: 5%; /* Percentual para se adaptar a diferentes larguras de tela */
+    min-width: 320px; /* Largura mínima da barra de cabeçalho */
+}
+
+
+nav {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem para nova linha */
+}
+
+
+.a-header, .a2-header {
+    display: inline-flex;
+    align-items: center;
+    height: 60px;
+    line-height: 60px;
+    font-weight: bold;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 16px; /* Redução do tamanho da fonte para telas menores */
+    margin-right: 20px; /* Redução da margem entre os itens */
+}
+
+
+.a-header:hover {
+    color: #918b8b;
+    transition: 0.6s;
+}
+
+
+.h1-header {
+    color: #FFF;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+    font-family: 'Rammetto One';
+}
+
+
+.div1 {
+    position: relative;
+    cursor: pointer;
+    z-index: 2; /* Define um z-index maior que o slideshow para sobrepor */
+}
+
+
+.div2 {
+    display: none;
+    position: absolute;
+    background-color: #918b8b;
+    min-width: 160px;
+}
+
+
+.div1:hover .div2 {
+    display: block;
+}
+
+
+.div2 .a2-header {
+    display: block; /* Ajuste para tornar os links do menu suspensos empilhados */
+    color: black;
+    text-decoration: none;
+    padding-left: 15px;
+    border-left: solid 3px #000;
+    border-bottom: solid 3px #000;
+}
+
+
+.div2 .a2-header:hover {
+    background-color: #e74d4d;
+}
+
+
+/* Media query para ajustar o estilo em telas menores */
+@media screen and (max-width: 768px) {
+    .a-header, .a2-header {
+        font-size: 14px; /* Redução adicional do tamanho da fonte */
+        margin-right: 15px; /* Ajuste da margem entre os itens */
+    }
+
+
+    .h1-header {
+        font-size: 24px; /* Redução adicional do tamanho da fonte */
+    }
+
+
+    header {
+        padding-left: 10px; /* Ajuste do espaçamento interno */
+        padding-right: 10px; /* Ajuste do espaçamento interno */
+    }
+}
+/* header 100%*/
+
+
+.slideshow {
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+    border-bottom: 10px solid  #000;
+  }
+ 
+  .slideshow2 {
+    width: 70%;
+    overflow: hidden;
+    margin: auto;
+   
+  }
+ 
+  .slides {
+    display: flex;
+    animation: slide-animation 10s infinite; /* Altera a cada 10 segundos */
+  }
+ 
+  .slide {
+    flex: 0 0 100%;
+    height: 200px;
+    background-size: cover;
+  }
+ 
+  @keyframes slide-animation {
+    0% {
+      transform: translateX(0);
+    }
+    33.3% {
+      transform: translateX(-100%);
+    }
+    66.6% {
+      transform: translateX(-200%);
+    }
+    100% {
+      transform: translateX(-300%);
+    }
+  }
+
+
+  /*slideshow 100%*/
+
+
+
+
+ 
+/* Estilos para a seção 1 */
+.section-one {
+    margin-left: 5%; /* Ajuste da margem esquerda para telas menores */
+   
+  }
+ 
+  .titulo1 {
+    font-family: Inter, Helvetica, sans-serif;
+    color: #BD3232;
+    font-size: 24px; /* Redução do tamanho da fonte para telas menores */
+    font-weight: bold;
+    text-align: center;
+  }
+ 
+  /* Estilos para a seção 2 */
+  .section-two {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os elementos quebrem para nova linha */
+    justify-content: space-evenly; /* Centraliza os elementos */
+    font-family: Inter, Helvetica, sans-serif;
+  }
+ 
+  .fundo, .fundo2 {
+    padding: 20px; /* Ajuste do espaçamento interno */
+    border-radius: 20px;
+    background: linear-gradient(180deg, #b1aeae 10%, rgba(235, 171, 171, 0.98) 100%, rgba(177, 167, 167, 0) 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+ 
+  .fundo {
+    height: auto; /* Altura automática para se adaptar ao conteúdo interno */
+  }
+ 
+  .fundo2 {
+    width: 100%; /* Ajusta a largura para ocupar toda a largura disponível */
+    max-width: 500px; /* Define uma largura máxima para a seção */
+  }
+ 
+  .titulo2 {
+    display: block; /* Exibe o título */
+    text-align: center; /* Centraliza o texto */
+    color: #BD3232;
+    font-size: 24px; /* Redução do tamanho da fonte para telas menores */
+    font-weight: bold;
+  }
+ 
+  .bolsas {
+    color: #000;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    font-size: 14px; /* Redução do tamanho da fonte para telas menores */
+    font-weight: bold;
+    line-height: 30px; /* Ajuste da altura da linha */
+    margin-bottom: 10px; /* Adiciona um espaçamento inferior */
+  }
+ 
+  .bolsas::before {
+    content: "";
+    background-color: #F25A70;
+    height: 10px;
+    width: 10px;
+    margin-right: 8px;
+    border-radius: 50%;
+  }
+ 
+  .titulo3 {
+    width: 90%; /* Ajusta a largura para ocupar 90% da tela */
+    max-width: 600px; /* Define uma largura máxima para o texto */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    color: #BD3232;
+    font-size: 24px; /* Redução do tamanho da fonte para telas menores */
+    font-weight: bold;
+    text-align: center;
+  }
+
+
+  /*main 100%*/
+
+  footer {
+    position: fixed; /* Fixa o rodapé */
+    bottom: 0; /* Alinha na parte inferior */
+    left: 0; /* Alinha à esquerda */
+    width: 100%; /* Largura total */
+    background-color: #d54545;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px; /* Tamanho da fonte base */
+    color: #524e4e;
+   
+}
+
+
+footer p{
+    margin:0px;
+}
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    footer {
+        font-size: 12px; /* Redução do tamanho da fonte para telas menores */
+    }
+}
+
+

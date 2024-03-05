@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+    display: flex;
+    background-color: #BD3232;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5%; /* Percentual para se adaptar a diferentes larguras de tela */
+    padding-right: 5%; /* Percentual para se adaptar a diferentes larguras de tela */
+    min-width: 320px; /* Largura mínima da barra de cabeçalho */
+}
+
+
+nav {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem para nova linha */
+}
+
+
+.a-header, .a2-header {
+    display: inline-flex;
+    align-items: center;
+    height: 60px;
+    line-height: 60px;
+    font-weight: bold;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 16px; /* Redução do tamanho da fonte para telas menores */
+    margin-right: 20px; /* Redução da margem entre os itens */
+}
+
+
+.a-header:hover {
+    color: #918b8b;
+    transition: 0.6s;
+}
+
+
+.h1-header {
+    color: #FFF;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+    font-family: 'Rammetto One';
+}
+
+
+.div1 {
+    position: relative;
+    cursor: pointer;
+    z-index: 2; /* Define um z-index maior que o slideshow para sobrepor */
+}
+
+
+.div2 {
+    display: none;
+    position: absolute;
+    background-color: #918b8b;
+    min-width: 160px;
+}
+
+
+.div1:hover .div2 {
+    display: block;
+}
+
+
+.div2 .a2-header {
+    display: block; /* Ajuste para tornar os links do menu suspensos empilhados */
+    color: black;
+    text-decoration: none;
+    padding-left: 15px;
+    border-left: solid 3px #000;
+    border-bottom: solid 3px #000;
+}
+
+
+.div2 .a2-header:hover {
+    background-color: #e74d4d;
+}
+
+
+/* Media query para ajustar o estilo em telas menores */
+@media screen and (max-width: 768px) {
+    .a-header, .a2-header {
+        font-size: 14px; /* Redução adicional do tamanho da fonte */
+        margin-right: 15px; /* Ajuste da margem entre os itens */
+    }
+
+
+    .h1-header {
+        font-size: 24px; /* Redução adicional do tamanho da fonte */
+    }
+
+
+    header {
+        padding-left: 10px; /* Ajuste do espaçamento interno */
+        padding-right: 10px; /* Ajuste do espaçamento interno */
+    }
+}
+
+
+.perfil {
+    color: #B20C0C;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Cookie', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    margin-top: -2.2%;
+    position: relative; /* Adicionado para corrigir a sobreposição */
+}
+
+
+#mudar {
+    margin-left: 57%; /* Ajuste o valor conforme necessário */
+    margin-bottom: -2%;
+    position: absolute;
+    z-index: 1;
+}
+
+
+#centro {
+    text-align: center;
+    margin: 0;
+    position: relative; /* Adicionado para corrigir a sobreposição */
+}
+
+
+#centro img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.nome {
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -0.2%;
+}
+
+
+.telefone, .atualizar {
+    font-size: 20px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    display: block;
+    width: 300px; /* Ajuste a largura conforme necessário */
+    margin: 0 auto;
+    padding: 15px; /* Ajuste o padding conforme necessário */
+    border-radius: 20px;
+    background: #B20C0C;
+    margin-bottom: 60px;
+    color: #FFF;
+
+
+}
+
+
+.atualizar {
+    margin-top: -60px;
+    display:flex;
+}
+
+
+
+
+footer {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #BD3232;
+    padding: 5px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 20px;
+    }
+
+
+    a {
+        font-size: 12px;
+        margin-right: 10px;
+    }
+
+
+    .div2 {
+        min-width: 100px;
+    }
+
+
+    .perfil {
+        font-size: 20px;
+    }
+
+
+    #mudar {
+        margin-left: 10px;
+    }
+
+
+    .nome {
+        font-size: 14px;
+    }
+
+
+    .telefone,
+    .atualizar {
+        font-size: 12px;
+        padding: 10px 20px;
+        margin: 5px;
+    }
+
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 1;
+    }
+}
+
+
+
+
+footer {
+    position: fixed; /* Fixa o rodapé */
+    bottom: 0; /* Alinha na parte inferior */
+    left: 0; /* Alinha à esquerda */
+    width: 100%; /* Largura total */
+    background-color: #d54545;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px; /* Tamanho da fonte base */
+    color: #524e4e;
+   
+}
+
+
+footer p{
+    margin:0px;
+}
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    footer {
+        font-size: 12px; /* Redução do tamanho da fonte para telas menores */
+    }
+}
