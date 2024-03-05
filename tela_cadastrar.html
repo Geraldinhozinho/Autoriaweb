@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar</title>
+    <link rel="stylesheet" href="../CSS/tela_cadastro.css">
+
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Fira+Code:wght@300;500&family=Inter&display=swap" rel="stylesheet">
+
+
+
+
+    <script>
+        function validateForm() {
+            var senha = document.getElementById("senha").value;
+            var confirmarSenha = document.getElementById("confirmarSenha").value;
+            var errorMessage = document.getElementById("error-message");
+
+
+
+
+            if (senha !== confirmarSenha) {
+                errorMessage.textContent = "As senhas não coincidem!";
+                return false;
+            } else {
+                errorMessage.textContent = "";
+                return true;
+            }
+        }
+    </script>
+</head>
+<body>
+    <img src="../IMG/img_entrar_e_cadastro.png" alt="">
+    <form id="formCadastro" onsubmit="return validateForm()">
+        <div>
+            <h1>HEMOC♡NNECT</h1>
+            <label for="nome">
+                <input type="text" id="nome" name="nome" placeholder="nome" required>
+            </label>
+    
+            <label for="email">
+                <input type="email" id="email" name="email" placeholder="email" required>
+            </label>
+    
+            <label for="senha">
+                <input type="password" id="senha" name="senha" placeholder="senha" required>
+            </label>
+    
+            <label for="confirmarSenha">
+                <input type="password" id="confirmarSenha" name="confirmarSenha" placeholder="Confirmar senha" required>
+                <span id="error-message" style="color: #FFF;"></span>
+            </label>
+        </div>
+        
+        <div id="button">
+            <button type="submit" id="submitBtn">Cadastrar</button>
+        </div>
+        <a id="a1" href="../HTML/tela_entrar.html">Já possui uma conta?</a>
+    </form>
+    
+    <script>
+        document.getElementById('formCadastro').addEventListener('submit', function(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+            validateForm();
+        });
+    
+        function validateForm() {
+            var nome = document.getElementById('nome').value;
+            var email = document.getElementById('email').value;
+            var senha = document.getElementById('senha').value;
+            var confirmarSenha = document.getElementById('confirmarSenha').value;
+            var errorMessage = document.getElementById('error-message');
+    
+            if (nome === '' || email === '' || senha === '' || confirmarSenha === '') {
+                errorMessage.textContent = 'Por favor, preencha todos os campos.';
+            } else if (senha !== confirmarSenha) {
+                errorMessage.textContent = 'As senhas não coincidem.';
+            } else {
+                window.location.href = '../HTML/tela_menu.html'; // Redireciona se os campos estiverem corretos
+            }
+        }
+    </script>
+    
+</body>
+</html>
+
+

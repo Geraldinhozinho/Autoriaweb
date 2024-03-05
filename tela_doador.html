@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://f="viewport content="width=device-width, initial-scale=1.0">
+    <title>Protótipo</title>
+
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+
+
+
+    <link rel="stylesheet" href="../CSS/tela_doador.css">
+</head>
+<body>
+    <header>
+        <h1 class="h1-header" > <a id="nos" href="../HTML/tela_nossa.html">HEM♡CONNECT</a></h1>
+        <nav> <!-- Navegation -->
+           
+            <a class="a-header" href="../HTML/tela_menu.html" lang="en" >Menu</a>  <!-- Anchor-->
+            <a class="a-header" href="../HTML/tela_doador.html" >Seja um doador</a>
+            <a class="a-header"  href="../HTML/tela_contatos.html" >Contatos</a>
+            <div class="div1">
+                <img src="../IMG/img_perfil.png" width="60px" height="60px" alt="">
+                <div class="div2">
+                  <a class="a2-header" href="../HTML/tela_perfil.html">Perfil</a>
+                  <a class="a2-header" href="../HTML/tela_doacoes.html">Doações</a>
+                  <a class="a2-header" href="../HTML/tela_cadastrar.html">Sair</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+<main>
+    <section>
+        <div class="doador">
+            <div class="titulos2">
+                <h1>Seja um doador</h1>
+                <h2>Uma única doação pode salvar até quatro vidas</h2>
+            </div>
+        </div>
+    </section>
+   
+    <section class="section1">
+        <form>
+            <div class="lugar">
+                <div class="nomeu">
+                    <label for="campoNome"></label>
+                    <input type="text" id="campoNome" name="campoNome" placeholder="Digite seu nome" required>
+                </div>
+
+
+                <div class="emailu">
+                    <label for="campoEmail"></label>
+                    <input type="text" id="campoEmail" name="campoEmail" placeholder="Digite seu E-mail" required>
+                </div>
+
+
+           
+                <div class="input-group">
+                    <p>Escolha uma opção:</p>
+                    <label >
+                        <input type="radio" name="opcao" value="opcao1" required>
+                        A+
+                    </label>
+                   
+                    <label>
+                        <input type="radio" name="opcao" value="opcao2" required>
+                        A-
+                    </label>
+                   
+                    <label>
+                        <input type="radio" name="opcao" value="opcao3" required>
+                        B-
+                    </label>
+                   
+                    <label>
+                        <input type="radio" name="opcao" value="opcao2" required>
+                        B+
+                    </label>
+                   
+                    <label>
+                        <input type="radio" name="opcao" value="opcao3" required>
+                        O+
+                    </label>
+                   
+                    <label>
+                        <input type="radio" name="opcao" value="opcao2" required>
+                        O-
+                    </label>
+                 
+                    <label>
+                        <input type="radio" name="opcao" value="opcao3" required>
+                        AB+
+                    </label>
+
+
+                    <label>
+                        <input type="radio" name="opcao" value="opcao3" required>
+                        AB-
+                    </label>
+                   
+                </div>    
+                   
+           
+                <div class="input-group">
+                    <p>Você fuma?</p>
+                    <label>
+                        <input type="radio" name="fumante" value="sim" required>
+                        Sim
+                    </label>
+                    <label>
+                        <input type="radio" name="fumante" value="nao" required>
+                        Não
+                    </label>
+                </div>
+       
+                <div class="input-group">
+                    <p>Sua vida sexual é ativa?</p>
+                    <label>
+                        <input type="radio" name="vidaSexual" value="sim" required>
+                        Sim
+                    </label>   
+                    <label>
+                        <input type="radio" name="vidaSexual" value="nao" required>
+                        Não
+                    </label>
+                </div>
+       
+                <div class="input-group">
+                    <p>Tem doença crônica?</p>
+                    <label>
+                        <input type="radio" name="doenca" value="sim" required>
+                        Sim
+                    </label>
+                    <label>
+                        <input type="radio" name="doenca" value="nao" required>
+                        Não
+                    </label>
+                </div>
+               
+            </div>
+
+
+            <div class="conf">
+                <label for="campoDoenca"></label>
+                <input type="text" id="campoDoenca" name="campoDoenca" placeholder="Informe a doença, se houver">
+            </div>
+        </form>
+
+
+       
+    </section>
+   
+    <section id="botao">
+        <input type="button" value="Cadastrar">
+    </section>
+   
+</main>
+<footer>
+    <p>2023 - Todos os direitos reservados. Hospital Regional de Pau dos Ferros - HCCA</p>
+    <p>Politica de Privacidade</p>
+</footer>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const botao = document.getElementById('botao');
+        const form = document.querySelector('form');
+       
+        botao.addEventListener('click', function(event) {
+            const camposObrigatorios = form.querySelectorAll('input[required], textarea[required], select[required]');
+            let valido = true;
+
+
+            camposObrigatorios.forEach(function(campo) {
+                if (!campo.value && campo.type !== 'radio') {
+                    valido = false;
+                } else if (campo.type === 'radio') {
+                    const name = campo.getAttribute('name');
+                    const radios = form.querySelectorAll(`input[name="${name}"]:checked`);
+                    if (radios.length === 0) {
+                        valido = false;
+                    }
+                }
+            });
+
+
+            if (!valido) {
+                event.preventDefault();
+                alert('Preencha todos os campos obrigatórios.');
+            } else {
+                alert('Enviado!');
+                form.reset();
+            }
+        });
+    });
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.querySelector('form');
+        const doencaRadios = document.querySelectorAll('input[name="doenca"]');
+        const campoDoenca = document.getElementById('campoDoenca');
+   
+        // Adiciona um evento de mudança para os radios da doença
+        doencaRadios.forEach(function(radio) {
+            radio.addEventListener('change', function() {
+                // Se "Sim" for selecionado, torna o campo da doença obrigatório
+                if (radio.value === 'sim') {
+                    campoDoenca.setAttribute('required', 'required');
+                } else {
+                    campoDoenca.removeAttribute('required');
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>
